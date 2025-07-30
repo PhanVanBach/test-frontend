@@ -12,6 +12,10 @@ Trang web cần bao gồm các yếu tố sau:
 
 👉 [https://test-frontend-sable.vercel.app/]
 
+## Link github
+
+👉 [https://github.com/PhanVanBach/test-frontend]
+
 ---
 
 ## Demo Screenshot
