@@ -28,6 +28,10 @@ export const StaticCard = styled.div`
   border-radius: 12px;
   overflow: hidden;
 
+  @media screen and (${devices.phone}) {
+    height: auto;
+  }
+
   img {
     width: 100%;
     height: 100%;

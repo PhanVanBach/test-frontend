@@ -1,69 +1,74 @@
-# React + TypeScript + Vite
+# Nevel Tech – Frontend Developer Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bài test cho vị trí **Frontend Developer** tại Nevel Tech.  
+Trang web cần bao gồm các yếu tố sau:
 
-Currently, two official plugins are available:
+- Code ra đúng giao diện thiết kế.
+- Đảm bảo tính năng đáp ứng (responsive).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Link Deploy (Demo Online)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👉 [https://test-frontend-sable.vercel.app/]
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Demo Screenshot
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![Final UI](./public/desktop1.png)
+![Final UI](./public/desktop2.png)
+![Final UI](./public/desktop3.png)
+![Final UI](./public/mobile1.jpg)
+![Final UI](./public/mobile2.jpg)
+![Final UI](./public/mobile3.jpg)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Mô tả dự án
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Dự án này là bài test Front-end Developer cho công ty Nevel Tech.
+
+Trang web được xây dựng bằng React.js, TypeScript, và styled-components, nhằm clone lại thiết kế từ Figma và đảm bảo tính responsive.
+
+## Các tính năng đã hoàn thành:
+
+- Giao diện giống thiết kế Figma (desktop, mobile)
+
+- Responsive đầy đủ (sử dụng media query)
+
+- Hover/click hiệu ứng rõ ràng trên desktop
+
+- Tối ưu code theo từng component riêng biệt
+
+- Cấu trúc folder rõ ràng, dễ maintain
+
+- Dùng styled-components để xử lý style linh hoạt
+
+- Tối ưu cho mobile: bỏ hover, thay đổi layout
+
+- Viết bằng TypeScript toàn bộ dự án
+
+## Tech Stack
+
+- React.js
+- Styled-components
+- React Router DOM
+- Responsive Web Design
+- Git + GitHub
+- Vercel (Deploy)
+
+---
+
+## Cách chạy project local
+
+```bash
+# Clone về máy
+git clone https://github.com/PhanVanBach/test-frontend.git
+
+# Cài đặt package
+npm install
+
+# Chạy dev server
+npm run dev
 ```
