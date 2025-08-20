@@ -31,7 +31,7 @@ const StyledNavbarButton = styled.button<StyledProps>`
   color: ${(props) => (props.$active ? "#FFC700" : "#d2d2d2")};
   padding: 8px 18px;
   height: 40px;
-  width: 80px;
+  min-width: 80px;
   border-radius: 100px;
   font-weight: 500;
   font-size: 14px;
