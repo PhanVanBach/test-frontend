@@ -4,7 +4,7 @@ import Button from "../../common/Button/Button";
 import NavbarButton from "./NavButton";
 import * as S from "./styled";
 
-const navItems = ["Home", "Items1", "Items2", "Items3", "Items4"];
+const navItems = ["Home", "About", "Contact", "Services"];
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
